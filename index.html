@@ -1,144 +1,129 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Download Retriev | Windows</title>
-
-    <meta name="description" content="Download Retriev for Windows. Get the latest beta installer for your PC.">
+    <title>Retriev - Downloads</title>
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
             font-family: Arial, sans-serif;
-            background: #0f1117;
-            color: #ffffff;
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 24px;
+            background: #ffffff;
+            color: #222;
+            margin: 0;
+            padding: 70px 20px;
         }
 
         .container {
-            max-width: 600px;
-            width: 100%;
-            text-align: center;
-            background: #191d27;
-            padding: 45px 30px;
-            border-radius: 18px;
-            border: 1px solid #303746;
+            max-width: 620px;
+            margin: auto;
         }
 
         h1 {
-            font-size: 38px;
-            margin-bottom: 12px;
-        }
-
-        .subtitle {
-            color: #a0a8b8;
-            margin-bottom: 25px;
-            line-height: 1.6;
-        }
-
-        .version {
-            display: inline-block;
-            background: #263b32;
-            color: #6ee7a0;
-            padding: 7px 14px;
-            border-radius: 20px;
-            font-size: 13px;
-            margin-bottom: 30px;
-        }
-
-        h2 {
-            font-size: 20px;
+            font-size: 30px;
             margin-bottom: 8px;
         }
 
-        .architecture {
-            color: #a0a8b8;
-            font-size: 14px;
-            margin-bottom: 22px;
+        p {
+            color: #666;
+            font-size: 15px;
+            line-height: 1.6;
         }
 
-        .download-btn {
-            display: block;
-            width: 100%;
-            padding: 15px;
-            margin: 12px 0;
-            background: #ffffff;
-            color: #111827;
+        .release {
+            margin-top: 40px;
+        }
+
+        h2 {
+            font-size: 19px;
+            margin-bottom: 5px;
+        }
+
+        .version {
+            font-size: 13px;
+            color: #888;
+            margin-bottom: 20px;
+        }
+
+        .downloads {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .downloads a {
+            display: inline-block;
+            padding: 9px 16px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            color: #222;
             text-decoration: none;
-            border-radius: 9px;
-            font-weight: bold;
-            transition: 0.2s;
+            font-size: 14px;
+            transition: background 0.2s;
         }
 
-        .download-btn:hover {
-            background: #dce3ee;
-            transform: translateY(-2px);
-        }
-
-        .secondary {
-            background: #303746;
-            color: #ffffff;
-        }
-
-        .secondary:hover {
-            background: #414b5e;
+        .downloads a:hover {
+            background: #f3f3f3;
         }
 
         .note {
-            color: #8d96a8;
-            font-size: 12px;
-            margin-top: 25px;
-            line-height: 1.6;
+            margin-top: 30px;
+            font-size: 13px;
+            color: #888;
+        }
+
+        footer {
+            margin-top: 65px;
+            padding-top: 18px;
+            border-top: 1px solid #eee;
+            font-size: 13px;
+            color: #999;
         }
     </style>
 </head>
 
 <body>
 
-    <main class="container">
+    <div class="container">
 
-        <h1>Download Retriev</h1>
+        <h1>Retriev</h1>
 
-        <p class="subtitle">
-            Get started with Retriev on your Windows PC.
+        <p>
+            Download Retriev for Windows.
+            Choose your preferred installer below.
         </p>
 
-        <span class="version">Beta · Version 0.1.0</span>
+        <div class="release">
 
-        <h2>Windows Installer</h2>
+            <h2>Retriev v0.1.0</h2>
 
-        <p class="architecture">64-bit Windows (x64)</p>
+            <div class="version">
+                Beta release · Windows 10/11 · x64
+            </div>
 
-        <a
-            class="download-btn"
-            href="https://github.com/Malviyaaadarsh/Retriev_V1/releases/download/v0.1.0/Retriev_0.1.0_x64-setup.exe">
-            Download EXE Installer
-        </a>
+            <div class="downloads">
 
-        <a
-            class="download-btn secondary"
-            href="https://github.com/Malviyaaadarsh/Retriev_V1/releases/download/v0.1.0/Retriev_0.1.0_x64_en-US.msi">
-            Download MSI Installer
-        </a>
+                <a href="https://github.com/Malviyaaadarsh/Retriev_V1/releases/download/v0.1.0/Retriev_0.1.0_x64-setup.exe">
+                    Download .exe
+                </a>
+
+                <a href="https://github.com/Malviyaaadarsh/Retriev_V1/releases/download/v0.1.0/Retriev_0.1.0_x64_en-US.msi">
+                    Download .msi
+                </a>
+
+            </div>
+
+        </div>
 
         <p class="note">
-            Windows 10 / 11 · 64-bit<br>
-            Retriev is currently in beta. More improvements are coming.
+            Retriev is currently in beta. Updates and improvements are ongoing.
         </p>
 
-    </main>
+        <footer>
+            © 2026 Retriev
+        </footer>
 
+    </div>
 </body>
 </html>
