@@ -3,9 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Retriev is a local-first AI knowledge assistant for organizing, indexing, searching, and interacting with your documents using AI.">
     <title>Retriev - Downloads</title>
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             font-family: Arial, sans-serif;
             background: #ffffff;
@@ -15,28 +20,86 @@
         }
 
         .container {
-            max-width: 620px;
+            max-width: 720px;
             margin: auto;
         }
 
+        .head {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            border-radius: 16px;
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+        }
+
         h1 {
-            font-size: 30px;
-            margin-bottom: 8px;
+            font-size: 48px;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 21px;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 16px;
+            margin-bottom: 7px;
         }
 
         p {
             color: #666;
             font-size: 15px;
+            line-height: 1.7;
+        }
+
+        .intro {
+            margin-top: 25px;
+        }
+
+        .section {
+            margin-top: 42px;
+        }
+
+        .section-description {
+            margin-top: 0;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-top: 22px;
+        }
+
+        .feature {
+            padding: 17px;
+            border: 1px solid #eee;
+            border-radius: 9px;
+            background: #fff;
+        }
+
+        .feature h3 {
+            margin-top: 0;
+            color: #222;
+        }
+
+        .feature p {
+            font-size: 13px;
+            margin-bottom: 0;
             line-height: 1.6;
         }
 
         .release {
-            margin-top: 40px;
-        }
-
-        h2 {
-            font-size: 19px;
-            margin-bottom: 5px;
+            margin-top: 45px;
+            padding-top: 28px;
+            border-top: 1px solid #eee;
         }
 
         .version {
@@ -54,17 +117,29 @@
 
         .downloads a {
             display: inline-block;
-            padding: 9px 16px;
+            padding: 10px 17px;
             border: 1px solid #ddd;
             border-radius: 6px;
             color: #222;
             text-decoration: none;
             font-size: 14px;
-            transition: background 0.2s;
+            transition: background 0.2s, border-color 0.2s;
+        }
+
+        .downloads a:first-child {
+            background: #222;
+            border-color: #222;
+            color: #fff;
+        }
+
+        .downloads a:first-child:hover {
+            background: #444;
+            border-color: #444;
         }
 
         .downloads a:hover {
             background: #f3f3f3;
+            border-color: #bbb;
         }
 
         .note {
@@ -73,6 +148,17 @@
             color: #888;
         }
 
+        .tagline {
+            color: #333;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .privacy {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #888;
+            line-height: 1.6;
+        }
         footer {
             margin-top: 65px;
             padding-top: 18px;
@@ -80,28 +166,43 @@
             font-size: 13px;
             color: #999;
         }
+
+        @media (max-width: 550px) {
+            body {
+                padding: 40px 18px;
+            }
+
+            h1 {
+                font-size: 38px;
+            }
+
+            .logo {
+                width: 65px;
+                height: 65px;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 
 <body>
 
     <div class="container">
-
-        <h1>Retriev</h1>
-
-        <p>
-            Download Retriev for Windows.
-            Choose your preferred installer below.
-        </p>
-
+        <div class="head">
+            <img class="logo" src="logo.png" alt="Retriev Logo">
+            <h1>Retriev</h1>
+        </div>
         <div class="release">
-
-            <h2>Retriev v0.1.0</h2>
-
+            <h2>Download Retriev v0.1.0</h2>
             <div class="version">
-                Beta release · Windows 10/11 · x64
+                Currently in Beta. Available for Windows 10 and 11 x64.
             </div>
-
+            <p>
+                Choose your preferred installer below :
+            </p>
             <div class="downloads">
 
                 <a href="https://github.com/Malviyaaadarsh/Retriev_V1/releases/download/v0.1.0/Retriev_0.1.0_x64-setup.exe">
@@ -116,14 +217,141 @@
 
         </div>
 
-        <p class="note">
-            Retriev is currently in beta. Updates and improvements are ongoing.
-        </p>
+        <div class="intro">
+            <p class="tagline">
+                About Retriev :
+            </p>
 
+            <p>
+                Retriev is a local-first AI knowledge assistant designed to
+                help you organize, index, search, and interact with your
+                personal documents using artificial intelligence.
+            </p>
+
+            <p>
+                Import your files and folders into dedicated workspaces.
+                Retriev processes your documents, creates searchable
+                representations, and lets you ask questions about your
+                information through AI-powered conversations.
+            </p>
+
+            <p>
+                Built as a Windows desktop application, Retriev combines
+                local storage, semantic search, vector-based retrieval,
+                and AI integrations to make your personal knowledge
+                accessible from one place.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>What can Retriev do?</h2>
+            <p class="section-description">
+                Everything you need to build and interact with your own
+                searchable knowledge base.
+            </p>
+
+            <div class="features">
+
+                <div class="feature">
+                    <h3>Local-First Architecture</h3>
+                    <p>
+                        Keep your workspaces and indexed knowledge on your
+                        own device, with a local backend and storage system.
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <h3>Workspace Organization</h3>
+                    <p>
+                        Create separate workspaces to organize documents
+                        and keep different collections of knowledge apart.
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <h3>File & Folder Import</h3>
+                    <p>
+                        Import individual files or entire folders from
+                        accessible locations on your Windows computer,
+                        including nested folders.
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <h3>Document Indexing</h3>
+                    <p>
+                        Process supported documents, divide their content
+                        into searchable chunks, and prepare them for
+                        AI-powered retrieval.
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <h3>Semantic Search</h3>
+                    <p>
+                        Search your knowledge by meaning and context,
+                        rather than relying only on exact keyword matches.
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <h3>AI-Powered Conversations</h3>
+                    <p>
+                        Ask questions about your indexed documents and
+                        retrieve relevant information through contextual
+                        AI conversations.
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <h3>Local Embeddings</h3>
+                    <p>
+                        Use a locally packaged MiniLM embedding model
+                        to convert document content into vector
+                        representations for semantic retrieval.
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <h3>Gemini & Ollama Integration</h3>
+                    <p>
+                        Connect to Google's Gemini models or use
+                        compatible locally hosted models through Ollama.
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <h3>Vector-Based Retrieval</h3>
+                    <p>
+                        Use LanceDB-powered vector storage to organize
+                        and retrieve relevant document chunks.
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <h3>Managed Document Copies</h3>
+                    <p>
+                        Imported documents are copied into their
+                        workspace-managed storage. Original source
+                        files remain untouched.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <p class="note">
+            Retriev is currently in beta. Updates, improvements, and
+            additional features are ongoing.
+        </p>
+        <p class="privacy">
+            Your documents and workspaces are managed locally on your device.
+            When using cloud-based AI services such as Gemini, relevant
+            document content may be sent to the selected provider to generate responses.
+        </p>
         <footer>
             © 2026 Retriev
         </footer>
-
     </div>
 </body>
 </html>
